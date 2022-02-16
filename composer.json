@@ -1,0 +1,29 @@
+{
+  "name": "selcukmart/data-store-library-y42",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    },
+    "files": [
+      "src/Helpers/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "SELCUK MART",
+      "email": "admin@hostingdevi.com"
+    }
+  ],
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
