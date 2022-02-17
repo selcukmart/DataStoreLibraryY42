@@ -21,6 +21,7 @@ tests/SessionStorageTest.php
 ### How to use
 
 For example we choose using Session Storage;
+
 Insert Example;
 
 ```php
