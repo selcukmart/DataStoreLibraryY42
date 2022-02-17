@@ -12,7 +12,7 @@ namespace DataStoreLibrary\DataStoreProviderOperations\SessionStorage;
 trait Delete
 {
 
-    public function delete($data_or_hash, bool $is_data)
+    public function delete($data_or_hash, bool $is_data): void
     {
         if ($is_data) {
             $this->setData($data_or_hash);
