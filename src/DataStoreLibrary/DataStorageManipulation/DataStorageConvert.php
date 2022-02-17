@@ -5,7 +5,7 @@
  * 15:23
  */
 
-namespace DataStoreLibraryY42\Tools;
+namespace DataStoreLibrary\DataStorageManipulation;
 
 class DataStorageConvert
 {
@@ -14,7 +14,7 @@ class DataStorageConvert
         $hash;
     private mixed $base64_decoded;
 
-    public function __construct(private $data)
+    public function __construct(private readonly mixed $data)
     {
     }
 

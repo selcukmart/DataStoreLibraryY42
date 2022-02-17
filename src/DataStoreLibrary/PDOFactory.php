@@ -1,15 +1,14 @@
 <?php
-namespace DataStoreLibraryY42;
+namespace DataStoreLibrary;
 
-use DataStoreLibraryY42\DataStoreProviders\DataStoreProviderFactoryInterface;
-use DataStoreLibraryY42\Tools\DB\PDOConnection;
+use DataStoreLibrary\Tools\DB\PDOConnection;
 
 /**
  * @author selcukmart
  * 15.02.2022
  * 15:01
  */
-class PDOFactory implements DataStoreProviderFactoryInterface
+class PDOFactory extends AbstractDataStoreFactory implements FactoryInterface
 {
     private \PDO $dbh;
     public function __construct(private readonly array $config)
@@ -33,7 +32,12 @@ class PDOFactory implements DataStoreProviderFactoryInterface
         // TODO: Implement insert() method.
     }
 
-    public function filter(string $str)
+    public function insertBatch(array $data)
+    {
+        // TODO: Implement insertBatch() method.
+    }
+
+    public function filter(string $str): array
     {
         // TODO: Implement filter() method.
     }
@@ -41,5 +45,15 @@ class PDOFactory implements DataStoreProviderFactoryInterface
     public function update($old_data, $new_data)
     {
         // TODO: Implement update() method.
+    }
+
+    public function retrieve(string $hash)
+    {
+        // TODO: Implement retrieve() method.
+    }
+
+    public function lists(int $limit, int $offset): array
+    {
+        // TODO: Implement lists() method.
     }
 }

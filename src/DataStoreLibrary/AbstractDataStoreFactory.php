@@ -5,12 +5,13 @@
  * 15:45
  */
 
-namespace DataStoreLibraryY42;
+namespace DataStoreLibrary;
 
-use DataStoreLibraryY42\Tools\DataStorageConvert;
+use DataStoreLibrary\DataStorageManipulation\DataStorageConvert;
+use DataStoreLibrary\Tools\FilterResult;
 use GlobalTraits\ErrorMessagesWithResultTrait;
 
-abstract class AbstractDataStoreLibraryY42
+abstract class AbstractDataStoreFactory
 {
     use ErrorMessagesWithResultTrait;
 
@@ -43,5 +44,22 @@ abstract class AbstractDataStoreLibraryY42
     public function getHash(): string
     {
         return $this->hash;
+    }
+
+    /**
+     * @param int|string $hash
+     * @param array $results
+     * @return array
+     * @author selcukmart
+     * 17.02.2022
+     * 10:54
+     */
+    protected function setResults(int|string $hash,mixed $item, array $results): array
+    {
+        $filter_object = new FilterResult();
+        $filter_object->setHash($hash);
+        $filter_object->setItem($item);
+        $results[] = $filter_object;
+        return $results;
     }
 }

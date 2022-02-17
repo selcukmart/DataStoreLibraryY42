@@ -5,18 +5,12 @@
  * 16:38
  */
 
-namespace DataStoreLibraryY42\DataStoreProviders\SessionStorage;
+namespace DataStoreLibrary\DataStoreProviderOperations\SessionStorage;
 
-
-
-use DataStoreLibraryY42\AbstractDataStoreLibraryY42;
-use DataStoreLibraryY42\DataStoreProviders\DataStoreProviderFactoryInterface;
 
 
 trait Insert
 {
-
-
 
     public function insert($data): bool
     {

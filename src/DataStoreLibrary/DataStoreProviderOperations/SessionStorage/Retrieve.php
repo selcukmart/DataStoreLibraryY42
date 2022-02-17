@@ -5,11 +5,10 @@
  * 16:38
  */
 
-namespace DataStoreLibraryY42\DataStoreProviders\SessionStorage;
+namespace DataStoreLibrary\DataStoreProviderOperations\SessionStorage;
 
 
-use DataStoreLibraryY42\SessionFactory;
-use DataStoreLibraryY42\Tools\DataStorageConvert;
+use DataStoreLibrary\DataStorageManipulation\DataStorageConvert;
 
 trait Retrieve
 {

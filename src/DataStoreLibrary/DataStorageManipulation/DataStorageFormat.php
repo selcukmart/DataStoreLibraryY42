@@ -5,14 +5,15 @@
  * 16:10
  */
 
-namespace DataStoreLibraryY42\Tools;
+namespace DataStoreLibrary\DataStorageManipulation;
 
 class DataStorageFormat
 {
-    private static array $controlled_as_serialized;
-    private static array $from_format;
+    private static array
+        $controlled_as_serialized,
+        $from_format;
 
-    public static function toFormat(mixed $data)
+    public static function toFormat(mixed $data): string
     {
         if (is_array($data) || is_object($data)) {
             $str = serialize($data);

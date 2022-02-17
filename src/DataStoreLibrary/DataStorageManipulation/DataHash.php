@@ -5,7 +5,7 @@
  * 15:23
  */
 
-namespace DataStoreLibraryY42\Tools;
+namespace DataStoreLibrary\DataStorageManipulation;
 
 class DataHash
 {

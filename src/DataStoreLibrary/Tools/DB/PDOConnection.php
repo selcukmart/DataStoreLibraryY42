@@ -5,7 +5,7 @@
  * 22:31
  */
 
-namespace DataStoreLibraryY42\Tools\DB;
+namespace DataStoreLibrary\Tools\DB;
 
 use PDO;
 
