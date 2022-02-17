@@ -1,5 +1,12 @@
 {
   "name": "selcukmart/data-store-library-y42",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "type": "library",
+  "keywords": [
+    "data store library",
+    "session storage"
+  ],
   "autoload": {
     "psr-4": {
       "": "src/"
