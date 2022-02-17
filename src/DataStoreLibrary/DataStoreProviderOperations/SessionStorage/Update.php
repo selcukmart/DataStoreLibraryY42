@@ -17,6 +17,7 @@ trait Update
         $this->setData($new_data);
         $this->getConvertedData();
         $this->hash = $old_hash;
+        $this->setResult(true);
         $this->storage_session[$old_hash] = $this->DataStorageConvert->getBase64EncodedStr();
     }
 
