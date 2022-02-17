@@ -1,3 +1,7 @@
+```
+composer require selcukmart/data-store-library-y42
+```
+
 ### What does it?
 
 It can store/get/change any data.
